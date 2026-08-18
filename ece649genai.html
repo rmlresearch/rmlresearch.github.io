@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECE 649 — Generative AI | Fall 2026</title>
+  <style>
+    :root {
+      --green: #005030;
+      --light-green: #e8f0eb;
+      --gray: #f5f5f5;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--green);
+      color: #fff;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.4rem; margin-bottom: 0.25rem; }
+    header p { font-size: 1.05rem; opacity: 0.9; }
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    h2 {
+      color: var(--green);
+      font-size: 1.4rem;
+      border-bottom: 2px solid var(--green);
+      padding-bottom: 0.3rem;
+      margin: 2rem 0 0.75rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+    th {
+      background: var(--green);
+      color: #fff;
+      padding: 0.55rem 0.75rem;
+      text-align: left;
+    }
+    td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: var(--light-green); }
+    .info-table td:first-child { font-weight: bold; width: 180px; background: var(--light-green); }
+    ul { padding-left: 1.4rem; margin-top: 0.5rem; }
+    ul li { margin-bottom: 0.4rem; }
+    .parts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .part-card {
+      background: var(--light-green);
+      border-left: 4px solid var(--green);
+      padding: 0.7rem 1rem;
+      border-radius: 3px;
+    }
+    .part-card strong { color: var(--green); }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+      padding: 2rem 1rem;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+    a { color: var(--green); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ECE 649 — Generative AI</h1>
+  <p>Fall 2026 &bull; 3 Credits &bull; University of Miami &bull; Department of Electrical and Computer Engineering</p>
+</header>
+
+<main>
+
+  <h2>Course Information</h2>
+  <table class="info-table">
+    <tr><td>Instructor</td><td>Dr. Willie McClinton</td></tr>
+    <tr><td>Email</td><td><a href="mailto:wbm43@miami.edu">wbm43@miami.edu</a></td></tr>
+    <tr><td>Meeting Time</td><td>Wednesdays 11:15 AM – 2:00 PM</td></tr>
+    <tr><td>Location</td><td>MEB 409</td></tr>
+    <tr><td>Class Format</td><td>Block A (70 min) &bull; 10-min break &bull; Block B (70 min) &bull; 15-min wrap-up / Q&amp;A</td></tr>
+    <tr><td>Semester Dates</td><td>Aug. 19 – Dec. 1, 2026 &bull; Reading Day Dec. 2 &bull; Final Exams Dec. 3–9</td></tr>
+  </table>
+
+  <h2>Course Description</h2>
+  <p>
+    This course introduces generative AI as a new generation of AI systems that create new objects, including text, code,
+    images, audio, video, robot behaviors, 3D shapes, and molecules. Students learn the foundations of AI, machine learning,
+    and deep learning before studying modern generative methods such as transformers, large language models, diffusion models,
+    flow matching, retrieval-augmented generation, and agentic workflows. The course emphasizes both theory and implementation
+    through an interactive course repository, in-person quizzes, one mid-term examination, one cumulative final examination,
+    and a final project in which students build and present a generative AI application.
+  </p>
+
+  <h2>Course Objectives</h2>
+  <ul>
+    <li>Explain the core ideas, vocabulary, and mathematical foundations behind modern generative AI systems.</li>
+    <li>Understand and apply major generative model families, including transformers, LLMs, diffusion, and flow matching.</li>
+    <li>Build generative AI for text, code, images, audio, video, robotics, 3D shapes, molecules, agents, and RAG systems.</li>
+    <li>Evaluate generative AI systems for quality, reliability, safety, bias, hallucination, and real-world deployment constraints.</li>
+    <li>Use industry-standard AI coding assistants together with GitHub, Markdown, and project workflows to build, document, and extend course projects.</li>
+  </ul>
+
+  <h2>Course Organization</h2>
+  <div class="parts-grid">
+    <div class="part-card"><strong>Part I</strong><br>Foundations of AI and Generative Systems</div>
+    <div class="part-card"><strong>Part II</strong><br>Text and Code Generation with Transformers and LLMs</div>
+    <div class="part-card"><strong>Part III</strong><br>Non-Text Generation with Diffusion and Flow Matching: Image, Audio, and Video</div>
+    <div class="part-card"><strong>Part IV</strong><br>Advanced Topics I — Robotics and Simulators</div>
+    <div class="part-card"><strong>Part V</strong><br>Advanced Topics II — 3D Shapes and Molecules</div>
+    <div class="part-card"><strong>Part VI</strong><br>Advanced Topics III — Agents, RAG, and OpenClaw</div>
+  </div>
+
+  <h2>Assessment</h2>
+  <table>
+    <thead>
+      <tr><th>Component</th><th>Weight</th><th>Schedule</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>In-person quizzes &amp; participation</td><td>20%</td><td>Throughout semester</td></tr>
+      <tr><td>Mid-term examination</td><td>20%</td><td>Fri., Oct. 9, 2026 (outside regular lecture blocks)</td></tr>
+      <tr><td>Cumulative final examination</td><td>20%</td><td>Dec. 3–9, 2026 (exact date TBA)</td></tr>
+      <tr>
+        <td>Final generative AI project &amp; presentation</td>
+        <td>40%</td>
+        <td>
+          Proposal due: Wed., Oct. 7, 2026 at 11:59 PM<br>
+          Presentations: Wed., Nov. 18, 2026 (regular class meeting)
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Fall 2026 Lecture Calendar</h2>
+  <table>
+    <thead>
+      <tr><th>Wk</th><th>Date</th><th>Part</th><th>Block A (11:15–12:25)</th><th>Block B (12:35–1:45)</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td><td>Aug. 19</td><td>I — Foundations</td>
+        <td>What is Generative AI? Historical context, generative vs. discriminative approaches, major modalities and model families.</td>
+        <td>Probabilistic ML basics: random variables, distributions, conditional probability, likelihood, MLE, entropy, cross-entropy, KL divergence.</td>
+      </tr>
+      <tr>
+        <td>2</td><td>Aug. 26</td><td>I — Foundations</td>
+        <td>Formulating the generative AI problem: learning distributions, sampling, conditional generation, density estimation, controllability and evaluation.</td>
+        <td>Latent representations and representation learning: embeddings, latent spaces, autoencoders, VAEs, representation quality.</td>
+      </tr>
+      <tr>
+        <td>3</td><td>Sept. 2</td><td>II — Text &amp; Code</td>
+        <td>Historical context and first attempts in text modeling: n-grams, statistical language models, RNNs/LSTMs, sequence-to-sequence models and limitations.</td>
+        <td>Recasting text as a generative AI problem: tokenization, autoregressive factorization, next-token prediction, training vs. generation.</td>
+      </tr>
+      <tr>
+        <td>4</td><td>Sept. 9</td><td>II — Text &amp; Code</td>
+        <td>Transformers and LLMs: attention, Q/K/V, self-attention, transformer blocks, positional information and decoder-only language models.</td>
+        <td>Breakthroughs with scale: pretraining, scaling, zero/few-shot behavior, instruction tuning, preference optimization, prompting and code generation.</td>
+      </tr>
+      <tr>
+        <td>5</td><td>Sept. 16</td><td>III — Diffusion &amp; Flow</td>
+        <td>Image generation and first attempts: feature inversion/style transfer, autoencoders/VAEs, GANs and autoregressive image models.</td>
+        <td>Diffusion setup: iterative refinement, forward noising, denoising, UNets, conditioning, training and sampling intuition.</td>
+      </tr>
+      <tr>
+        <td>6</td><td>Sept. 23</td><td>III — Diffusion &amp; Flow</td>
+        <td>Diffusion formalized: forward/reverse processes, noise schedules, denoising objectives, score interpretation and sampling.</td>
+        <td>Flow matching: normalizing-flow intuition, continuous dynamics, probability paths, vector fields and modern flow-matching models.</td>
+      </tr>
+      <tr>
+        <td>7</td><td>Sept. 30</td><td>IV — Robotics &amp; Simulators</td>
+        <td>Generative AI for robotics: action/trajectory generation, imitation learning, generative policies and diffusion policies.</td>
+        <td>Vision-language-action and embodied foundation models: language-conditioned behavior, multimodal representations and robot control.</td>
+      </tr>
+      <tr>
+        <td>8</td><td>Oct. 7</td><td>IV — Robotics &amp; Simulators</td>
+        <td>World models and simulators: learned dynamics, generative environments, synthetic experience and model-based reasoning.</td>
+        <td>Generative robotics in practice: simulation, data generation, sim-to-real, safety and evaluation. <strong>Project proposal due 11:59 PM.</strong></td>
+      </tr>
+      <tr>
+        <td>9</td><td>Oct. 14</td><td>V — 3D &amp; Molecules</td>
+        <td>3D representations and generation: meshes, point clouds, voxels, neural fields, NeRFs and Gaussian splats.</td>
+        <td>Text-to-3D and image-to-3D: reconstruction, generative design, scene/world generation and evaluation.</td>
+      </tr>
+      <tr>
+        <td>10</td><td>Oct. 21</td><td>V — 3D &amp; Molecules</td>
+        <td>Molecular generation: graphs, SMILES, molecular representations, validity, novelty and property conditioning.</td>
+        <td>Generative science: proteins, structure prediction, diffusion/flow methods for molecules, drug discovery and scientific workflows.</td>
+      </tr>
+      <tr>
+        <td>11</td><td>Oct. 28</td><td>VI — Agents, RAG &amp; OpenClaw</td>
+        <td>Retrieval-augmented generation: ingestion, chunking, embeddings, vector search, reranking, context construction and citations.</td>
+        <td>Building and evaluating RAG systems: retrieval quality, grounded generation, failure modes, evaluation and practical architectures.</td>
+      </tr>
+      <tr>
+        <td>12</td><td>Nov. 4</td><td>VI — Agents, RAG &amp; OpenClaw</td>
+        <td>AI agents: tools, planning, reasoning, memory, execution, critics, feedback loops and human-in-the-loop supervision.</td>
+        <td>Agentic systems in practice: coding/research agents, multi-agent workflows, computer use, OpenClaw-style workflows and reproducibility.</td>
+      </tr>
+      <tr>
+        <td>13</td><td>Nov. 11</td><td>Integration &amp; Recap</td>
+        <td>Synthesis I: Parts I–III — probability, latent variables, autoregression, transformers, diffusion and flow matching as alternative generative formulations.</td>
+        <td>Evaluation, reliability, safety and trustworthy GenAI; project refinement and final-exam preparation.</td>
+      </tr>
+      <tr>
+        <td>14</td><td>Nov. 18</td><td>Integration &amp; Recap</td>
+        <td>Synthesis II: Parts IV–VI — embodied generation, 3D/science, retrieval and agents; connecting the full course.</td>
+        <td><strong>Final project presentations;</strong> cumulative course takeaways and final-exam review.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Textbooks and Resources</h2>
+  <ul>
+    <li>Sanseviero, Cuenca, Passos &amp; Whitaker, <em>Hands-On Generative AI with Transformers and Diffusion Models</em>, O'Reilly Media.</li>
+    <li>Kevin P. Murphy, <em>Probabilistic Machine Learning: An Introduction</em>, MIT Press.</li>
+    <li>Kevin P. Murphy, <em>Probabilistic Machine Learning: Advanced Topics</em>, MIT Press.</li>
+    <li>Course GitHub repository: lecture notes, assignments, examples, MDX lessons, project templates, and AI-agent-readable study materials.</li>
+    <li>Selected research papers, technical blogs, model cards, documentation, and open-source repositories assigned throughout the semester.</li>
+  </ul>
+
+</main>
+
+<footer>
+  University of Miami &bull; Department of Electrical and Computer Engineering &bull; ECE 649 Generative AI &bull; Fall 2026
+</footer>
+
+</body>
+</html>
