@@ -76,18 +76,43 @@
       margin-top: 3rem;
     }
     a { color: var(--green); }
+    .header-nav {
+      position: absolute;
+      top: 1rem;
+      right: 1.25rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .header-nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.5);
+      padding: 0.35rem 0.85rem;
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .header-nav a:hover { background: rgba(255,255,255,0.28); }
+    header { position: relative; }
   </style>
 </head>
 <body>
 
 <header>
+  <nav class="header-nav">
+    <a href="https://github.com/wmcclinton/ece649genai" target="_blank" rel="noopener">Course GitHub</a>
+    <a href="#syllabus">Syllabus</a>
+    <a href="#final-project">Final Project</a>
+  </nav>
   <h1>ECE 649 — Generative AI</h1>
   <p>Fall 2026 &bull; 3 Credits &bull; University of Miami &bull; Department of Electrical and Computer Engineering</p>
 </header>
 
 <main>
 
-  <h2>Course Information</h2>
+  <h2 id="syllabus">Course Information</h2>
   <table class="info-table">
     <tr><td>Instructor</td><td>Dr. Willie McClinton</td></tr>
     <tr><td>Email</td><td><a href="mailto:wbm43@miami.edu">wbm43@miami.edu</a></td></tr>
@@ -224,6 +249,33 @@
       </tr>
     </tbody>
   </table>
+
+  <h2 id="final-project">Final Project</h2>
+  <p>The final project is worth <strong>40% of the course grade</strong>. Teams of 1–4 students build, evaluate, and present a complete generative AI system.</p>
+
+  <table>
+    <thead><tr><th>Component</th><th>Weight</th><th>What is graded</th></tr></thead>
+    <tbody>
+      <tr><td>Project proposal</td><td>10%</td><td>Clarity of problem and goals; sensible architecture; evaluation plan; team-size-appropriate scope.</td></tr>
+      <tr><td>GitHub &amp; reproducibility</td><td>20%</td><td>Working implementation; README/setup quality; organized code; reproducible evaluation; attribution.</td></tr>
+      <tr><td>Final presentation &amp; demo</td><td>60%</td><td>Technical understanding; architecture; quality of demo and results; evaluation and failure analysis; communication and Q&amp;A.</td></tr>
+      <tr><td>Peer &amp; self review</td><td>10%</td><td>Individual contribution, reliability, collaboration, and ownership.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="color:var(--green);margin:1.2rem 0 0.5rem">Key Dates</h3>
+  <ul>
+    <li><strong>Proposal due:</strong> Wednesday, Oct. 7, 2026 at 11:59 PM</li>
+    <li><strong>Presentations:</strong> Wednesday, Nov. 18, 2026 (regular class meeting)</li>
+  </ul>
+
+  <h3 style="color:var(--green);margin:1.2rem 0 0.5rem">Requirements</h3>
+  <ul>
+    <li>Use at least one substantive generative AI component (LLM/transformer, VAE, diffusion model, flow model, multimodal model, agent, RAG system, or generative policy).</li>
+    <li>Deliver a clear problem statement, defensible architecture, data or knowledge source, evaluation method, and discussion of limitations.</li>
+    <li>Submit a GitHub repository with working code, a clear README, reproducible evaluation, and proper attribution.</li>
+    <li>Every team member must have a visible role in the presentation or Q&amp;A.</li>
+  </ul>
 
   <h2>Textbooks and Resources</h2>
   <ul>
